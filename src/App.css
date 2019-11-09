@@ -1,4 +1,67 @@
-.App {
+.container {
+  width: 90%;
+  margin: 100px auto;
+  padding: 5px 10px 20px 10px;
   text-align: center;
+  background: #fafafa;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+              0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.todo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 8px;
+}
+
+.todo-status-text{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.status{
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid rgb(3, 202, 3);
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.status.done{
+  background-color: rgb(3, 202, 3);
+}
+
+.todo span{
+  transform: rotate(45deg);
+  color: red;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+input{
+  height: 45px;
+  width: 100%;
+  background: #eeeeee;
+  border-radius: 25px;
+  text-indent: 20px;
+  border: none;
+  outline: none;
+}
+
+input:focus{
+  border: 2px solid greenyellow;
+}
+
+.orange-color{
+  color: orangered;
+}
+
+.line-through{
+  text-decoration: line-through;
+}

@@ -5,7 +5,9 @@ import './App.css';
 
 const App = () =>{
   const initialTodos = [
-    {id:1, desc: "ssss", done: true},
+    {id:0, desc: "complete html app", done: false},
+    {id:1, desc: "create deal for web app", done: false},
+    {id:2, desc: "complete ajax instance", done: true},
   ]
   const [todos,setTodos] = useState(initialTodos)
   const addTodo = (text) => {
@@ -32,7 +34,7 @@ const App = () =>{
     setTodos(newTodos)
   }
   return (
-    <div className="App">
+    <div className="container">
       <ShowTodos todos={todos} updateTodo={updateTodo} removeTodo={removeTodo}/>
       <CreateTodo addTodo={addTodo}/>
     </div>

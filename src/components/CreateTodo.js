@@ -8,7 +8,7 @@ const CreateTodo = ({addTodo}) =>{
     }
     return(
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="add a todo" value={todoText} onChange={(e) => setTodoText(e.target.value)}/>
+            <input type="text" placeholder="add a todo and enter" value={todoText} onChange={(e) => setTodoText(e.target.value)}/>
         </form>
     )
 }
